@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!--heading-->
-    <div>
+    <div id="title">
         <h1>Rock Paper Scissor project!</h1>
-        <p>The game will run for 5 rounds, once this 5 rounds are over the game will reset</p>
+        <p>The game will run for 5 rounds, once this 5 rounds are over the game will reset.</p>
     </div>
 
     <!--Score boards for p1 and p2-->
     <div class="scoreBoard">
-        <h2>Your Choice: <span id="user-choice"></span></h2>
-        <h3>Your Score: <span id="player-counter"></span></h3>
-        <h2>Computers Choice: <span id="comp-choice"></span></h2>
-        <h3>computers score: <span id="computer-counter"></span></h3>
+        <div id="Player1">
+          <h2>Your Choice: <span id="user-choice"></span></h2>
+          <h3>Your Score: <span id="player-counter"></span></h3>
+        </div>
+        <div id="player 2">
+          <h2>Computers Choice: <span id="comp-choice"></span></h2>
+          <h3>computers score: <span id="computer-counter"></span></h3>
+        </div>
     </div>
 
     <!--results panel -->
-    <div> 
-        <h1> Winner is:<span id="winner"></span></h1>
+    <div>
+        <h1>Overall Winner is: <span id="winner"></span></h1>
+        <h2>Round number: <span id="num-of-Rounds"></span></h2>
+        <h2>Winner of round: <span id="round-winner"></span></h2>
     </div>
 
 
     <!--contains buttons choices for rock, paper, scissors-->
-    <div id="container">
-        <h1>Choose your weapon</h1>
-        <button id="rockBtn">Rock</button>
-        <button id="paperBtn">Paper</button>
-        <button id="scissorBtn">Scissor</button>
+    <div>
+        <h1 id="weapon-display">Choose your weapon!</h1>
+        <div id="button-container">
+            <span id="Button-word"><button id="rockBtn" class="buttons"><img src="./image/rock.jpeg"></button><h1>Rock</h1></span>
+            <span id="Button-word"><button id="paperBtn" class="buttons"><img src="./image/paper.jpeg"></button><h1>Paper</h1></span>
+            <span id="Button-word"><button id="scissorBtn" class="buttons"><img src="./image/scissors.png"></button><h1>Scissor</h1></span>
+        </div>
     </div>
 
     <script src="script.js"></script>
